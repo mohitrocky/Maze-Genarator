@@ -1,0 +1,11 @@
+This is just a quick python app to visualize maze generation algorithms.
+
+A maze is a grid (width and height are specified on the command line). Each
+cell is represented as an (x, y) tuple, where (0, 0) is the top left. This
+grid is stored as a graph; if two cells are adjacent in this graph, then
+there is no wall between them.
+
+Algorithms can be added by writing functions in maze.generators. An
+implementation of an algorithm should yield edges (pairs of (x,y)
+coordinates) one-by-one. The function name automatically becomes one of the
+allowed choices for the --algorithm command line switch. 
